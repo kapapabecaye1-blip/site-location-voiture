@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — SEN-Location</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="entete" id="entete">
+        <div class="logo" id="logo">
+            <h1>SEN-Location</h1>
+            <span>Kaolack · Senegal</span>
+        </div>
+        <nav class="liens" id="liens">
+            <a href="index.html">Acceuil</a>
+            <a href="voiture.html">Voiture</a>
+            <a href="Contact.html" class="active">Contact</a>
+        </nav>
+        <div class="buttons" id="buttons">
+            <a href="connexion.html" class="btn btn-outline">Connexion</a>
+            <a href="inscription.html" class="btn btn-gold">Inscription</a>
+        </div>
+    </header>
+
+    <div class="contact-wrap">
+        <!-- debut carte infos contact -->
+        <div class="contact-info-card">
+            <span class="plate-tag">KL · CONTACT</span>
+            <h3>Une question ? Parlons-en.</h3>
+            <p>Notre equipe repond du lundi au samedi et reste joignable 24h/24 pour toute urgence sur la route.</p>
+
+            <div class="contact-line-item">
+                <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                    <b>Adresse</b>
+                    <span>Kaolack, Medina</span>
+                </div>
+            </div>
+            <div class="contact-line-item">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                    <b>Telephone</b>
+                    <span>78 735 86 73</span>
+                </div>
+            </div>
+            <div class="contact-line-item">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                    <b>Email</b>
+                    <span>senlocSEN@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="contact-hours">
+                <div><span>Lundi - Vendredi</span> <b>08h00 - 20h00</b></div>
+                <div><span>Samedi</span> <b>09h00 - 18h00</b></div>
+                <div><span>Dimanche</span> <b>Assistance route uniquement</b></div>
+            </div>
+        </div>
+        <!-- fin carte infos contact -->
+
+        <!-- debut formulaire contact -->
+        <div>
+            <div class="contact-form-card">
+                <h3>Envoyez-nous un message</h3>
+                <p>Reponse sous 24h ouvrees.</p>
+
+                <div class="form-success" id="formSuccess">
+                    <i class="fa-solid fa-circle-check"></i> Message envoye ! Nous revenons vers vous rapidement.
+                </div>
+
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="field">
+                            <label>Nom complet</label>
+                            <input type="text" placeholder="Votre nom" required>
+                        </div>
+                        <div class="field">
+                            <label>Telephone</label>
+                            <input type="tel" placeholder="7X XXX XX XX" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Email</label>
+                        <input type="email" placeholder="vous@exemple.com" required>
+                    </div>
+                    <div class="field">
+                        <label>Sujet</label>
+                        <select required>
+                            <option value="">Choisir un sujet</option>
+                            <option>Question sur une reservation</option>
+                            <option>Devenir partenaire proprietaire</option>
+                            <option>Assistance route</option>
+                            <option>Autre</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>Message</label>
+                        <textarea placeholder="Ecrivez votre message ici..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-indigo btn-block">Envoyer le message</button>
+                    <p class="form-note">En envoyant ce formulaire, vous acceptez d'etre recontacte par SEN-Location.</p>
+                </form>
+            </div>
+
+            <div class="map-block">
+                <div class="pin"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                    <b>SEN-Location</b>
+                    <span>Kaolack, quartier Medina — Senegal</span>
+                </div>
+            </div>
+        </div>
+        <!-- fin formulaire contact -->
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom:14px;">
+                    <h1>SEN-Location</h1>
+                </div>
+                <p>La location de voitures simple et fiable a Kaolack. Vehicules verifies, conducteurs de confiance.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Navigation</h5>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="voiture.html">Nos voitures</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="connexion.html">Connexion</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <div class="contact-line"><i class="fa-solid fa-phone"></i> 78 735 86 73</div>
+                <div class="contact-line"><i class="fa-solid fa-envelope"></i> senlocSEN@gmail.com</div>
+                <div class="contact-line"><i class="fa-solid fa-location-dot"></i> Kaolack, Medina</div>
+            </div>
+            <div class="footer-col">
+                <h5>Horaires</h5>
+                <p>Lundi - Samedi<br>08h00 - 20h00</p>
+                <p>Assistance route<br>24h/24, 7j/7</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 SEN-Location. Tous droits reserves.</span>
+            <span>Kaolack, Senegal</span>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e){
+            e.preventDefault();
+            document.getElementById('formSuccess').classList.add('show');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

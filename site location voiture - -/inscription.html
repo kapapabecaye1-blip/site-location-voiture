@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription — SEN-Location</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="auth-wrap">
+        <!-- debut panneau marque -->
+        <div class="auth-side">
+            <div class="logo-mark">
+                <h1>SEN-Location</h1>
+            </div>
+            <span class="plate-tag">KL · NOUVEAU MEMBRE</span>
+            <h2>Rejoignez SEN-Location.</h2>
+            <p>Creez votre compte pour reserver vos voitures, suivre vos locations et beneficier d'offres exclusives.</p>
+            <ul class="auth-benefits">
+                <li><i class="fa-solid fa-check"></i> Reservation rapide et securisee</li>
+                <li><i class="fa-solid fa-check"></i> Offres exclusives aux membres</li>
+                <li><i class="fa-solid fa-check"></i> Support prioritaire 24/7</li>
+            </ul>
+        </div>
+        <!-- fin panneau marque -->
+
+        <!-- debut formulaire -->
+        <div class="auth-form-side">
+            <div class="auth-form">
+                <a href="index.html" class="back-home"><i class="fa-solid fa-arrow-left"></i> Retour a l'accueil</a>
+                <h3>Creer un compte</h3>
+                <p class="subtitle">Quelques informations pour commencer.</p>
+
+                <div class="form-success" id="signupSuccess">
+                    <i class="fa-solid fa-circle-check"></i> Compte cree avec succes ! Vous pouvez vous connecter.
+                </div>
+                <div class="form-success" id="signupError" style="background:#fff5f5;border-color:#fed7d7;color:#c53030;">
+                    <i class="fa-solid fa-circle-exclamation"></i> Les mots de passe ne correspondent pas.
+                </div>
+
+                <form id="signupForm">
+                    <div class="field">
+                        <label>Nom complet</label>
+                        <input type="text" placeholder="Votre nom et prenom" required>
+                    </div>
+                    <div class="field">
+                        <label>Telephone</label>
+                        <input type="tel" placeholder="7X XXX XX XX" required>
+                    </div>
+                    <div class="field">
+                        <label>Email</label>
+                        <input type="email" placeholder="vous@exemple.com" required>
+                    </div>
+                    <div class="field">
+                        <label>Mot de passe</label>
+                        <input type="password" id="pwd1" placeholder="••••••••" required>
+                    </div>
+                    <div class="field">
+                        <label>Confirmer le mot de passe</label>
+                        <input type="password" id="pwd2" placeholder="••••••••" required>
+                    </div>
+                    <div class="field-row-inline" style="margin-bottom:22px;">
+                        <label class="checkbox-line">
+                            <input type="checkbox" required> J'accepte les <a href="#">conditions d'utilisation</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-gold btn-block">Creer mon compte</button>
+                </form>
+
+                <p class="auth-divider">Deja un compte ? <a href="connexion.html" class="link-gold">Se connecter</a></p>
+            </div>
+        </div>
+        <!-- fin formulaire -->
+    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(e){
+            e.preventDefault();
+            var p1 = document.getElementById('pwd1').value;
+            var p2 = document.getElementById('pwd2').value;
+            var ok = document.getElementById('signupSuccess');
+            var err = document.getElementById('signupError');
+            if(p1 !== p2){
+                err.classList.add('show');
+                ok.classList.remove('show');
+                return;
+            }
+            err.classList.remove('show');
+            ok.classList.add('show');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

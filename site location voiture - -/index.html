@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEN-Location — Location de voitures a Kaolack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- debut section entete -->
+    <header class="entete" id="entete">
+        <div class="logo" id="logo">
+            <h1>SEN-Location</h1>
+            <span>Kaolack · Senegal</span>
+        </div>
+        <nav class="liens" id="liens">
+            <a href="index.html" class="active">Acceuil</a>
+            <a href="voiture.html">Voiture</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <div class="buttons" id="buttons">
+            <a href="connexion.html" class="btn btn-outline">Connexion</a>
+            <a href="inscription.html" class="btn btn-gold">Inscription</a>
+        </div>
+    </header>
+    <!-- fin section entete -->
+
+    <!-- debut section hero -->
+    <section class="hero">
+        <div class="hero-text">
+            <span class="plate-tag">KL · SEN-LOCATION · 2026</span>
+            <h2>Roulez libre,<br>partout a <em>Kaolack</em>.</h2>
+            <p>SEN-Location met en relation des proprietaires de vehicules verifies et des conducteurs de confiance. Choisissez, reservez et prenez la route en quelques minutes.</p>
+            <div class="hero-cta">
+                <a href="voiture.html" class="btn btn-gold">Voir les voitures</a>
+                <a href="#comment-ca-marche" class="btn btn-ghost-light">Comment ca marche</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <b>120+</b>
+                    <span>Voitures disponibles</span>
+                </div>
+                <div class="stat">
+                    <b>4.8/5</b>
+                    <span>Note moyenne clients</span>
+                </div>
+                <div class="stat">
+                    <b>24/7</b>
+                    <span>Assistance route</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="card-float rating-chip">
+                <i class="fa-solid fa-star"></i> 4.9 note flotte
+            </div>
+            <div class="card-float car-main">
+                <img src="image/2015-lamborghini-veneno-roadster.jpg" alt="Lamborghini Veneno Roadster">
+                <div class="float-info">
+                    <div>
+                        <b>Lamborghini Veneno</b>
+                        <span>Disponible aujourd'hui</span>
+                    </div>
+                    <span class="float-price">50 000 F/jour</span>
+                </div>
+            </div>
+            <div class="card-float card-mini">
+                <img src="image/porche 911.jfif" alt="Porsche 911">
+                <div>
+                    <b>Porsche 911</b>
+                    <span>25 000 F Cfa/jour</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin section hero -->
+
+    <!-- debut barre de recherche -->
+    <div class="search-bar">
+        <div class="search-field">
+            <label>Ville</label>
+            <select>
+                <option>Kaolack</option>
+                <option>Dakar</option>
+                <option>Thies</option>
+            </select>
+        </div>
+        <div class="search-field">
+            <label>Date de depart</label>
+            <input type="date">
+        </div>
+        <div class="search-field">
+            <label>Date de retour</label>
+            <input type="date">
+        </div>
+        <div class="search-field">
+            <label>Type de vehicule</label>
+            <select>
+                <option>Tous les types</option>
+                <option>Citadine</option>
+                <option>Berline</option>
+                <option>Sportive</option>
+                <option>SUV</option>
+            </select>
+        </div>
+        <a href="voiture.html" class="btn btn-indigo">
+            <i class="fa-solid fa-magnifying-glass"></i> Rechercher
+        </a>
+    </div>
+    <!-- fin barre de recherche -->
+
+    <!-- debut section flotte -->
+    <section class="section">
+        <div class="section-head">
+            <span class="plate-tag">KL · NOTRE FLOTTE</span>
+            <h3>Une voiture pour chaque trajet</h3>
+            <p>Des citadines economiques aux modeles sportifs, chaque vehicule est inspecte et verifie avant chaque location.</p>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card-annonce">
+                <div class="card-image">
+                    <span class="card-badge">Premium</span>
+                    <img src="image/2015-lamborghini-veneno-roadster.jpg" alt="Lamborghini Veneno Roadster">
+                </div>
+                <div class="card-details">
+                    <h3 class="card-title">Lamborghini Veneno Roadster</h3>
+                    <p class="card-location"><i class="fa-solid fa-location-dot"></i> Kaolack, Medina</p>
+                    <div class="card-specs">
+                        <span><i class="fa-solid fa-gauge-high"></i> Automatique</span>
+                        <span><i class="fa-solid fa-user"></i> 2 places</span>
+                    </div>
+                    <div class="card-rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <span class="rating-value">5.0</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="vendeur-badge"><i class="fa-solid fa-circle-check"></i> Vendeur verifie</div>
+                    <div class="price-row">
+                        <p class="card-prix">50 000 <span>F Cfa/jour</span></p>
+                        <button class="btn-louer">Louer maintenant</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-annonce">
+                <div class="card-image">
+                    <span class="card-badge">Populaire</span>
+                    <img src="image/Audi RS3 Sportback.jfif" alt="Audi RS3 Sportback">
+                </div>
+                <div class="card-details">
+                    <h3 class="card-title">Audi RS3 Sportback</h3>
+                    <p class="card-location"><i class="fa-solid fa-location-dot"></i> Kaolack, Medina</p>
+                    <div class="card-specs">
+                        <span><i class="fa-solid fa-gauge-high"></i> Automatique</span>
+                        <span><i class="fa-solid fa-user"></i> 5 places</span>
+                    </div>
+                    <div class="card-rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <span class="rating-value">4.5</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="vendeur-badge"><i class="fa-solid fa-circle-check"></i> Vendeur verifie</div>
+                    <div class="price-row">
+                        <p class="card-prix">30 000 <span>F Cfa/jour</span></p>
+                        <button class="btn-louer">Louer maintenant</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-annonce">
+                <div class="card-image">
+                    <img src="image/porche 911.jfif" alt="Porsche 911">
+                </div>
+                <div class="card-details">
+                    <h3 class="card-title">Porsche 911</h3>
+                    <p class="card-location"><i class="fa-solid fa-location-dot"></i> Kaolack, Medina</p>
+                    <div class="card-specs">
+                        <span><i class="fa-solid fa-gauge-high"></i> Automatique</span>
+                        <span><i class="fa-solid fa-user"></i> 4 places</span>
+                    </div>
+                    <div class="card-rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <span class="rating-value">4.2</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="vendeur-badge"><i class="fa-solid fa-circle-check"></i> Vendeur verifie</div>
+                    <div class="price-row">
+                        <p class="card-prix">25 000 <span>F Cfa/jour</span></p>
+                        <button class="btn-louer">Louer maintenant</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-foot">
+            <a href="voiture.html">Voir tout le catalogue <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+    <!-- fin section flotte -->
+
+    <!-- debut section comment ca marche -->
+    <section class="section alt" id="comment-ca-marche">
+        <div class="section-head">
+            <span class="plate-tag on-light">KL · LE TRAJET</span>
+            <h3>Comment ca marche</h3>
+            <p>Trois etapes, aucune complication.</p>
+        </div>
+
+        <div class="route">
+            <div class="route-step">
+                <div class="route-num">01</div>
+                <h4>Choisissez votre voiture</h4>
+                <p>Parcourez le catalogue et comparez modeles, prix et disponibilites en temps reel.</p>
+            </div>
+            <div class="route-step">
+                <div class="route-num">02</div>
+                <h4>Reservez en ligne</h4>
+                <p>Selectionnez vos dates, confirmez votre reservation et recevez une confirmation immediate.</p>
+            </div>
+            <div class="route-step">
+                <div class="route-num">03</div>
+                <h4>Prenez la route</h4>
+                <p>Recuperez le vehicule verifie aupres du proprietaire et roulez, assistance disponible a tout moment.</p>
+            </div>
+        </div>
+    </section>
+    <!-- fin section comment ca marche -->
+
+    <!-- debut section pourquoi nous -->
+    <section class="section">
+        <div class="section-head">
+            <span class="plate-tag on-light">KL · CONFIANCE</span>
+            <h3>Pourquoi choisir SEN-Location</h3>
+        </div>
+
+        <div class="trust-grid">
+            <div class="trust-item">
+                <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                    <h4>Vehicules verifies</h4>
+                    <p>Chaque annonce est controlee avant publication : papiers en regle et etat verifie.</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <div class="icon"><i class="fa-solid fa-file-shield"></i></div>
+                <div>
+                    <h4>Assurance incluse</h4>
+                    <p>Toutes les locations comprennent une couverture de base pour rouler sereinement.</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <div class="icon"><i class="fa-solid fa-wallet"></i></div>
+                <div>
+                    <h4>Paiement flexible</h4>
+                    <p>Orange Money, Wave ou especes a la remise des cles, selon ce qui vous arrange.</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <div class="icon"><i class="fa-solid fa-headset"></i></div>
+                <div>
+                    <h4>Assistance 24/7</h4>
+                    <p>Une equipe disponible jour et nuit en cas de souci pendant votre location.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin section pourquoi nous -->
+
+    <!-- debut section temoignages -->
+    <section class="section alt">
+        <div class="section-head">
+            <span class="plate-tag on-light">KL · AVIS</span>
+            <h3>Ce que disent nos clients</h3>
+        </div>
+
+        <div class="testi-grid">
+            <div class="testi-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>Reservation en cinq minutes et voiture recuperee le jour meme. L'etat du vehicule correspondait exactement aux photos.</p>
+                <div class="testi-who">
+                    <div class="testi-avatar">FD</div>
+                    <div>
+                        <b>Fatou Diop</b>
+                        <span>Kaolack</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>L'assistance a repondu en pleine nuit pour un probleme de batterie. Probleme regle en moins d'une heure.</p>
+                <div class="testi-who">
+                    <div class="testi-avatar">MS</div>
+                    <div>
+                        <b>Moussa Sarr</b>
+                        <span>Medina</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <p>Le paiement par Wave a simplifie toute la demarche, et le prix journalier reste tres correct pour la region.</p>
+                <div class="testi-who">
+                    <div class="testi-avatar">AN</div>
+                    <div>
+                        <b>Awa Ndiaye</b>
+                        <span>Kaolack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin section temoignages -->
+
+    <!-- debut cta banniere -->
+    <div class="cta-banner">
+        <div>
+            <h3>Pret a prendre la route ?</h3>
+            <p>Trouvez votre voiture ideale des aujourd'hui.</p>
+        </div>
+        <a href="voiture.html" class="btn btn-gold">Reserver maintenant</a>
+    </div>
+    <!-- fin cta banniere -->
+
+    <!-- debut footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo"
+                    <h1>SEN-Location</h1>
+                </div>
+                <p>La location de voitures simple et fiable a Kaolack. Vehicules verifies, conducteurs de confiance.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Navigation</h5>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="voiture.html">Nos voitures</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="connexion.html">Connexion</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <div class="contact-line"><i class="fa-solid fa-phone"></i> 78 735 86 73</div>
+                <div class="contact-line"><i class="fa-solid fa-envelope"></i> senlocSEN@gmail.com</div>
+                <div class="contact-line"><i class="fa-solid fa-location-dot"></i> Kaolack, Medina</div>
+            </div>
+            <div class="footer-col">
+                <h5>Horaires</h5>
+                <p>Lundi - Samedi<br>08h00 - 20h00</p>
+                <p>Assistance route<br>24h/24, 7j/7</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 SEN-Location. Tous droits reserves.</span>
+            <span>Kaolack, Senegal</span>
+        </div>
+    </footer>
+    <!-- fin footer -->
+
+</body>
+</html>

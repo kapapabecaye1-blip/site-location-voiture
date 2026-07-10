@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion — SEN-Location</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="auth-wrap">
+        <!-- debut panneau marque -->
+        <div class="auth-side">
+            <div class="logo-mark">
+                <h1>SEN-Location</h1>
+            </div>
+            <span class="plate-tag">KL · ESPACE MEMBRE</span>
+            <h2>Bon retour parmi nous.</h2>
+            <p>Connectez-vous pour retrouver vos reservations, vos vehicules favoris et gerer votre compte en toute simplicite.</p>
+            <ul class="auth-benefits">
+                <li><i class="fa-solid fa-check"></i> Historique de vos locations</li>
+                <li><i class="fa-solid fa-check"></i> Reservation en un clic</li>
+                <li><i class="fa-solid fa-check"></i> Offres reservees aux membres</li>
+            </ul>
+        </div>
+        <!-- fin panneau marque -->
+
+        <!-- debut formulaire -->
+        <div class="auth-form-side">
+            <div class="auth-form">
+                <a href="index.html" class="back-home"><i class="fa-solid fa-arrow-left"></i> Retour a l'accueil</a>
+                <h3>Connexion</h3>
+                <p class="subtitle">Entrez vos identifiants pour acceder a votre compte.</p>
+
+                <div class="form-success" id="loginSuccess">
+                    <i class="fa-solid fa-circle-check"></i> Connexion reussie ! Redirection...
+                </div>
+
+                <form id="loginForm">
+                    <div class="field">
+                        <label>Email</label>
+                        <input type="email" placeholder="vous@exemple.com" required>
+                    </div>
+                    <div class="field">
+                        <label>Mot de passe</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                    <div class="field-row-inline">
+                        <label class="checkbox-line">
+                            <input type="checkbox"> Se souvenir de moi
+                        </label>
+                        <a href="#" class="link-gold">Mot de passe oublie ?</a>
+                    </div>
+                    <button type="submit" class="btn btn-gold btn-block">Se connecter</button>
+                </form>
+
+                <p class="auth-divider">Pas encore de compte ? <a href="inscription.html" class="link-gold">Creer un compte</a></p>
+            </div>
+        </div>
+        <!-- fin formulaire -->
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e){
+            e.preventDefault();
+            document.getElementById('loginSuccess').classList.add('show');
+        });
+    </script>
+</body>
+</html>
