@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserver une voiture — SEN-Location</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="entete" id="entete">
+        <div class="logo" id="logo">
+            <h1>SEN-Location</h1>
+            <span>Kaolack · Senegal</span>
+        </div>
+        <nav class="liens" id="liens">
+            <a href="index.html">Acceuil</a>
+            <a href="voiture.html" class="active">Voiture</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <div class="buttons" id="buttons">
+            <a href="connexion.html" class="btn btn-outline">Connexion</a>
+            <a href="inscription.html" class="btn btn-gold">Inscription</a>
+        </div>
+    </header>
+
+    <!-- debut banniere reservation -->
+    <section class="booking-hero">
+        <span class="plate-tag">KL · RESERVATION</span>
+        <h2>Finalisez votre reservation</h2>
+        <p>Remplissez vos informations, la voiture vous attend.</p>
+        <div class="steps-mini">
+            <span class="done"></span>
+            <span class="done"></span>
+            <span></span>
+        </div>
+    </section>
+    <!-- fin banniere reservation -->
+
+    <div class="booking-wrap">
+
+        <!-- debut formulaire reservation (non fonctionnel, aucun envoi) -->
+        <div class="booking-form-card">
+            <h3>Vos informations</h3>
+            <p class="subtitle">Aucun paiement en ligne n'est demande maintenant, vous confirmez sur place.</p>
+
+            <div class="field-section-label">Vos coordonnees</div>
+            <div class="form-row">
+                <div class="field">
+                    <label>Nom complet</label>
+                    <input type="text" placeholder="Votre nom et prenom">
+                </div>
+                <div class="field">
+                    <label>Telephone</label>
+                    <input type="tel" placeholder="7X XXX XX XX">
+                </div>
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input type="email" placeholder="vous@exemple.com">
+            </div>
+
+            <div class="field-section-label">Dates et lieu</div>
+            <div class="form-row">
+                <div class="field">
+                    <label>Date de debut</label>
+                    <input type="date">
+                </div>
+                <div class="field">
+                    <label>Date de fin</label>
+                    <input type="date">
+                </div>
+            </div>
+            <div class="field">
+                <label>Lieu de prise en charge</label>
+                <select>
+                    <option>Kaolack, Medina</option>
+                    <option>Kaolack, Centre-ville</option>
+                    <option>Dakar</option>
+                    <option>Thies</option>
+                </select>
+            </div>
+
+            <div class="field-section-label">Mode de paiement</div>
+            <div class="pay-options">
+                <label class="pay-option active">
+                    <input type="radio" name="paiement" checked>
+                    <i class="fa-solid fa-mobile-screen-button"></i> Orange Money
+                </label>
+                <label class="pay-option">
+                    <input type="radio" name="paiement">
+                    <i class="fa-solid fa-wave-square"></i> Wave
+                </label>
+                <label class="pay-option">
+                    <input type="radio" name="paiement">
+                    <i class="fa-solid fa-money-bill-wave"></i> Especes
+                </label>
+            </div>
+
+            <div class="field" style="margin-top:18px;">
+                <label>Message (optionnel)</label>
+                <textarea placeholder="Une demande particuliere ? Ecrivez-la ici..."></textarea>
+            </div>
+
+            <button type="button" class="btn btn-gold btn-block">Confirmer la reservation</button>
+            <p class="form-note">En confirmant, vous acceptez d'etre contacte par SEN-Location pour finaliser la location.</p>
+        </div>
+        <!-- fin formulaire reservation -->
+
+        <!-- debut recapitulatif voiture -->
+        <div class="booking-summary">
+            <img src="image/porche 911.jfif" alt="Porsche 911">
+            <div class="booking-summary-body">
+                <span class="vendeur-badge"><i class="fa-solid fa-circle-check"></i> Vendeur verifie</span>
+                <h3 style="margin-top:12px;">Porsche 911</h3>
+                <p class="loc"><i class="fa-solid fa-location-dot"></i> Kaolack, Medina</p>
+
+                <div class="booking-line">
+                    <span>Prix par jour</span>
+                    <b>25 000 F Cfa</b>
+                </div>
+                <div class="booking-line">
+                    <span>Duree</span>
+                    <b>1 jour</b>
+                </div>
+                <div class="booking-line">
+                    <span>Frais de service</span>
+                    <b>Inclus</b>
+                </div>
+
+                <div class="booking-total">
+                    <span>Total estime</span>
+                    <b>25 000 F Cfa</b>
+                </div>
+
+                <div class="booking-guarantee">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Annulation gratuite jusqu'a 24h avant la prise en charge du vehicule.</span>
+                </div>
+            </div>
+        </div>
+        <!-- fin recapitulatif voiture -->
+
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom:14px;">
+                    <h1>SEN-Location</h1>
+                </div>
+                <p>La location de voitures simple et fiable a Kaolack. Vehicules verifies, conducteurs de confiance.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Navigation</h5>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="voiture.html">Nos voitures</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="connexion.html">Connexion</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <div class="contact-line"><i class="fa-solid fa-phone"></i> 78 735 86 73</div>
+                <div class="contact-line"><i class="fa-solid fa-envelope"></i> senlocSEN@gmail.com</div>
+                <div class="contact-line"><i class="fa-solid fa-location-dot"></i> Kaolack, Medina</div>
+            </div>
+            <div class="footer-col">
+                <h5>Horaires</h5>
+                <p>Lundi - Samedi<br>08h00 - 20h00</p>
+                <p>Assistance route<br>24h/24, 7j/7</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 SEN-Location. Tous droits reserves.</span>
+            <span>Kaolack, Senegal</span>
+        </div>
+    </footer>
+</body>
+</html>
